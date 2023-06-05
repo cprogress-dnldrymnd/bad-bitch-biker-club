@@ -8659,6 +8659,9 @@ section.avatar-slider .swiper .swiper-wrapper {
       @media (max-width: 575px) {
         section.avatar-slider .swiper .swiper-wrapper .swiper-slide img {
           width: 160px; } }
+      @media (max-width: 480px) {
+        section.avatar-slider .swiper .swiper-wrapper .swiper-slide img {
+          width: 130px; } }
 
 section.welcome-text .column-text {
   max-width: 640px; }

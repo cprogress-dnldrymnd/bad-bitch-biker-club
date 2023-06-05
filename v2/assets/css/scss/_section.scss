@@ -30,6 +30,10 @@ section.avatar-slider {
           @media(max-width: 575px) {
             width: 160px;
           }
+
+          @media(max-width: 480px) {
+            width: 130px;
+          }
         }
       }
     }
