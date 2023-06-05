@@ -1,6 +1,7 @@
 jQuery(document).ready(function () {
   swiper_sliders();
 });
+
 function swiper_sliders() {
   var mySwiperLoop = new Swiper(".mySwiperAvatar", {
     spaceBetween: 20,

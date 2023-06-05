@@ -8374,7 +8374,8 @@ img {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  line-height: 2; }
+  line-height: 2;
+  padding-right: 0 !important; }
 
 h1, .h1,
 h2,
@@ -8448,6 +8449,10 @@ a {
     color: var(--accent-color); }
 .social ul li:not(:last-child) {
   margin-right: 1rem; }
+
+section {
+  overflow: hidden;
+  position: relative; }
 
 .background-black {
   background-color: var(--black-color);

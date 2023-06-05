@@ -13,6 +13,7 @@ img {
 body {
   font-family: 'Montserrat', sans-serif;
   line-height: 2;
+  padding-right: 0 !important;
 }
 
 h1,
@@ -126,4 +127,9 @@ a {
       }
     }
   }
+}
+
+section {
+  overflow: hidden;
+  position: relative;
 }
