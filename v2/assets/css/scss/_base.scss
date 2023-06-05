@@ -1,0 +1,129 @@
+:root {
+  --black-color: #000;
+  --white-color: #fff;
+  --accent-color: #F4AA1D;
+  --light-color: #B8B8B8;
+  --gray-color: #575757;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 2.375rem;
+
+  @media (max-width: 991px) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 575px) {
+    font-size: 15px;
+  }
+}
+
+a {
+  color: var(--accent-color);
+  transition: 300ms;
+}
+
+.link-box {
+  a {
+    text-decoration: underline;
+    color: var(--white-color);
+  }
+}
+
+.button-box {
+  a {
+    padding: 1.125rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.375rem;
+    text-decoration: none;
+    line-height: 1.5;
+    border: 3px solid;
+  }
+
+  &.button-primary {
+    a {
+      background-color: var(--black-color);
+      color: var(--accent-color);
+      border-color: var(--black-color);
+
+      &:hover {
+        background-color: var(--accent-color);
+        color: var(--black-color);
+      }
+    }
+  }
+
+  &.button-accent {
+    a {
+      background-color: var(--accent-color);
+      color: var(--black-color);
+      border-color: var(--accent-color);
+
+      &:hover {
+        background-color: var(--black-color);
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  &.button-large-width {
+    a {
+      max-width: 360px;
+      width: 100%;
+    }
+  }
+}
+
+.social {
+  a {
+    color: var(--white-color);
+
+    svg {
+      width: 30px;
+      height: auto;
+    }
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  ul {
+    li {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,201 @@
+section.avatar-slider {
+  .row {
+    --bs-gutter-y: 20px;
+  }
+
+  .swiper {
+    .swiper-wrapper {
+      -webkit-transition-timing-function: linear !important;
+      -o-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+
+      .swiper-slide {
+        width: auto !important;
+
+        img {
+          width: 312px;
+
+          @media(max-width: 1199px) {
+            width: 250px;
+          }
+
+          @media(max-width: 991px) {
+            width: 220px;
+          }
+
+          @media(max-width: 767px) {
+            width: 200px;
+          }
+
+          @media(max-width: 575px) {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.welcome-text {
+  .column-text {
+    max-width: 640px;
+  }
+
+  .column-image {
+    img {
+      @media (max-width: 575px) {
+        max-width: 260px;
+      }
+    }
+  }
+}
+
+
+section.cta {
+  .heading-box {
+    h2 {
+      @media (max-width: 1199px) and (min-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .column-text {
+    max-width: 400px;
+  }
+
+  .inner {
+    padding: 3rem;
+    border-radius: 10px;
+
+    @media (max-width: 1199px) {
+      padding: 2rem;
+    }
+
+    @media (max-width: 767px) {
+      padding: 1.25rem;
+    }
+  }
+
+  .button-box {
+    a {
+      max-width: 275px;
+      width: 100%;
+
+      @media(max-width: 991px) {
+        max-width: 350px;
+      }
+
+      @media(max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+section.image-row {
+  .description-box {
+    @media(min-width: 768px) {
+      max-width: 250px;
+    }
+  }
+}
+
+section.road-map {
+  .phases {
+    .row {
+      .col-auto {
+        @media(min-width: 361px) {
+          width: 130px;
+        }
+      }
+
+      .description-box {
+        @media(max-width: 360px) {
+          padding-left: 27px;
+        }
+      }
+
+      &:hover {
+        .phase {
+          &:before {
+            opacity: 1;
+          }
+        }
+      }
+
+      @media(max-width: 360px) {
+        flex-direction: column;
+      }
+    }
+
+    .phase {
+      &:before {
+        content: '';
+        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.144" height="17.144" viewBox="0 0 17.144 17.144"> <path id="Icon_metro-my-location" data-name="Icon metro-my-location" d="M12.428,9.311a3.117,3.117,0,1,0,3.117,3.117,3.116,3.116,0,0,0-3.117-3.117Zm6.967,2.338a7.009,7.009,0,0,0-6.187-6.187V3.856H11.649V5.461a7.009,7.009,0,0,0-6.187,6.187H3.856v1.559H5.461a7.009,7.009,0,0,0,6.187,6.187V21h1.559V19.395a7.009,7.009,0,0,0,6.187-6.187H21V11.649H19.395Zm-6.967,6.234a5.455,5.455,0,1,1,5.455-5.455A5.456,5.456,0,0,1,12.428,17.883Z" transform="translate(-3.856 -3.856)" fill="%23fff"/></svg>');
+        background-size: 17px;
+        width: 17px;
+        height: 17px;
+        display: inline-block;
+        margin-right: 10px;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+section.live-paper {
+  .post-holder {
+    .post-box {
+      border-bottom: 1px solid rgba($color: #fff, $alpha: 0.25);
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+section.splash {
+  margin-top: -40px;
+
+  .background-image {
+    @media(max-width: 991px) {
+      position: static;
+    }
+  }
+
+  .inner {
+
+
+    .cta {
+      .heading-box {
+        @media(max-width: 991px) {
+          max-width: 500px;
+        }
+      }
+
+      @media(min-width: 992px) {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 460px;
+        padding: 3rem;
+      }
+    }
+
+    @media(min-width: 992px) {
+      min-height: 100vh;
+      border-radius: 5px;
+    }
+  }
+
+  @media(max-width: 991px) {
+    margin-top: -53px;
+  }
+
+}
+
+section.text-section {
+  .description-box {
+    max-width: 1200px;
+  }
+}

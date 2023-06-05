@@ -1,0 +1,58 @@
+footer {
+  border-bottom: 14px solid var(--accent-color);
+
+  .inner {
+    border-top: 1px solid rgba($color: #fff, $alpha: 0.4);
+  }
+
+  .column-form {
+    input[type="email"] {
+      background-color: transparent;
+      max-width: 350px;
+      width: 100%;
+      border: none;
+      border-bottom: 2px solid var(--white-color);
+
+      &::placeholder {
+        color: var(--light-color);
+      }
+
+      @media(max-width: 767px) {
+        max-width: 100%;
+      }
+    }
+
+    button {
+      background-color: var(--gray-color);
+      padding: 1rem;
+      border-radius: 5px;
+      border: none;
+      color: var(--white-color);
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .row {
+    .column-1 {
+      @media (max-width: 767px) {
+        order: 2;
+      }
+    }
+
+    .column-2 {
+      @media (max-width: 767px) {
+        order: 1;
+      }
+    }
+
+    .column-3 {
+      @media (max-width: 767px) {
+        order: 3;
+      }
+    }
+  }
+}
