@@ -36,4 +36,26 @@ function swiper_sliders() {
       reverseDirection: true
     },
   });
+
+
+  if (window.innerWidth < 768) {
+    jQuery('.swiper-js-team').addClass('swiper');
+    jQuery('.swiper-js-team .row').addClass('swiper-wrapper').removeClass('row');
+    jQuery('.swiper-js-team .col-4').addClass('swiper-slide');
+
+    const swiperTeam = new Swiper('.swiper-js-team', {
+      // Optional parameters
+      loop: true,
+      slidesPerView: 1,
+      // Navigation arrows
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+    });
+
+
+  }
 }

@@ -133,3 +133,11 @@ section {
   overflow: hidden;
   position: relative;
 }
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  &:after {
+    content: none !important;
+  }
+}
