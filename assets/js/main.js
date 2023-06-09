@@ -44,7 +44,7 @@ function swiper__sliders() {
     jQuery('.swiper-js-team .row').addClass('swiper-wrapper').removeClass('row g5');
     jQuery('.swiper-js-team .col-4').addClass('swiper-slide').removeClass('col-4');
     const swiperTeam = new Swiper('.swiper-js-team', {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 20,
       autoplay: {
         delay: 4000,
