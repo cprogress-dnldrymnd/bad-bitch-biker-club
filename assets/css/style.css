@@ -8706,6 +8706,12 @@ section.cta .button-box a {
   section.image-row .description-box {
     max-width: 250px; } }
 
+@media (max-width: 767px) {
+  section.road-map .image-box img {
+    max-width: 300px; } }
+@media (max-width: 575px) {
+  section.road-map .image-box img {
+    max-width: 200px; } }
 @media (min-width: 361px) {
   section.road-map .phases .row .col-auto {
     width: 130px; } }

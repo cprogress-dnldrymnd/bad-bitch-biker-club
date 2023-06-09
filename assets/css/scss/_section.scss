@@ -106,6 +106,18 @@ section.image-row {
 }
 
 section.road-map {
+  .image-box {
+    img {
+      @media(max-width: 767px) {
+        max-width: 300px;
+      }
+
+      @media(max-width: 575px) {
+        max-width: 200px;
+      }
+    }
+  }
+
   .phases {
     .row {
       .col-auto {
