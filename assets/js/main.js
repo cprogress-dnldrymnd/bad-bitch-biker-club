@@ -47,7 +47,7 @@ function swiper__sliders() {
       loop: true,
       slidesPerView: 2,
       autoplay: {
-        delay: 1000,
+        delay: 4000,
         disableOnInteraction: false,
       },
       navigation: {
