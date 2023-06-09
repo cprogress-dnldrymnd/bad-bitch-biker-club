@@ -46,6 +46,10 @@ function swiper__sliders() {
     const swiperTeam = new Swiper('.swiper-js-team', {
       loop: true,
       slidesPerView: 2,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
       navigation: {
         nextEl: '.swiper-button-next-team',
         prevEl: '.swiper-button-prev-team',
