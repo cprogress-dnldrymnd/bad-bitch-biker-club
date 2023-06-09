@@ -9,670 +9,93 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script>
     jQuery(document).ready(function () {
       jQuery("#footer").load("parts/footer.html");
     });
   </script>
-  <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 
 <body class="background-black">
-  <header class="py-3">
+  <header>
     <div class="container large-container">
-      <nav class="navbar navbar-expand-lg p-0">
-        <a class="navbar-brand p-0" href="#">
-          <img src="./assets/images/logomark.png" alt="bad-bitch-biker-logo">
-          <img src="./assets/images/logotext.png" alt="bad-bitch-biker-logo">
-        </a>
-        <button class="navbar-toggler" data-bs-toggle="offcanvas" href="#offCanvasMenu" role="button"
-          aria-controls="offCanvasMenu">
-          <span class="bbbc-navbar-toggler-icon d-flex flex-column">
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25.735" height="4.948" viewBox="0 0 25.735 4.948">
-                <path id="Intersection_2" data-name="Intersection 2"
-                  d="M2.171,24.556a1.915,1.915,0,0,1-1.2-2.088A14.12,14.12,0,0,0,.7,20.778a6.431,6.431,0,0,0-.052-1.791c-.367-.9,0-1.853-.326-2.655a3.531,3.531,0,0,1-.187-2.387,14.967,14.967,0,0,0,.228-3.651,2.911,2.911,0,0,0-.273-.93c.072-.124.3-.331.27-.5C.175,7.8.7,6.818.69,5.781a.949.949,0,0,1,.14-.5A1.285,1.285,0,0,0,.86,4.145,2.288,2.288,0,0,1,.8,2.59C1.068,2.115.88,1.7,1,1.3L2.148,0l.571.434,1.171,1-.206.992-.226.2c0,.126,0,.3,0,.481-.041,1.65.24,3.333-.616,4.9.173,1.067-.217,2.135.24,3.236a3.824,3.824,0,0,1-.065,2.291,2.685,2.685,0,0,0,.015,1.8,1.821,1.821,0,0,1,.054,1.452A2.3,2.3,0,0,0,2.9,18.762a13.817,13.817,0,0,1,.277,2.219l.348.314h0l-.029.091v1.35l-.781,1.82Z"
-                  transform="translate(25.056 0.508) rotate(90)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" />
-              </svg>
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25.81" height="5.013" viewBox="0 0 25.81 5.013">
-                <path id="Intersection_1" data-name="Intersection 1"
-                  d="M.4,23.391V22.157l-.4-1.1.058-.028c0-1.439,0-2.873,0-4.307,0-.354-.122-.745.306-.995-.131-.789.648-1.312.659-2.129.031-2.506-.328-5.022.24-7.523A10.724,10.724,0,0,0,1.292,3.74,1.963,1.963,0,0,0,.4,2.722v-1.3L.918.068,1.219,0c.381.022.768.022,1.174.037L3.131.8c.153.6-.212,1.345.188,2.04.343.6-.088,1.331.415,1.936a.832.832,0,0,1,0,.809c-.5.822-.2,1.693-.289,2.535-.1.934.165,1.874-.262,2.82-.189.42.119,1.022.223,1.675l-.577,1c0,.532-.014,1.178.005,1.825.012.392-.109.785.271,1.161.154.152-.033.6-.085.9s-.276.657-.167.891c.623,1.336.168,2.713.256,4.065a6.543,6.543,0,0,1-.451,1.758l-.78.541c.141-.025.047,0-.048.008a7.314,7.314,0,0,1-.787.026c-.113,0-.225,0-.338,0Z"
-                  transform="translate(25.307 0.625) rotate(90)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" />
-              </svg>
-            </span>
-            <span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="25.479" height="5.278" viewBox="0 0 25.479 5.278">
-                <path id="Subtraction_1" data-name="Subtraction 1"
-                  d="M1.761,3.686h0C1.175,3.178.011,2.164,0,2.154V1.537L1.032.1h.02c.2,0,.4,0,.6-.007s.379-.007.564-.007c.267,0,.487.007.691.023A13.516,13.516,0,0,1,5.751.649a2.772,2.772,0,0,0,.777.108A2.952,2.952,0,0,0,7.115.7,9.481,9.481,0,0,1,8.894.432a7.066,7.066,0,0,1,1.353.189l.26.05A4,4,0,0,0,11.27.75,2.922,2.922,0,0,0,12.375.543,7.456,7.456,0,0,1,14.711.116c.477-.025.981-.037,1.586-.037.494,0,1,.008,1.481.016h.006l.675.01h.01c.062,0,.126,0,.187-.01s.125-.01.187-.01a.6.6,0,0,1,.515.239.445.445,0,0,0,.323.1.475.475,0,0,0,.3-.081A1.347,1.347,0,0,1,20.9,0a2.321,2.321,0,0,1,.78.151,5.427,5.427,0,0,0,1.753.243c.138,0,.28.008.423.014l.206.263.376.48-.39,1.9-1.173.3H22.02a2.772,2.772,0,0,0-.944-.374c-.067.019-.134.044-.205.07a1.45,1.45,0,0,1-.483.117h-.134l-.448,0c-.161,0-.326,0-.491,0a7.71,7.71,0,0,1-2.291-.27,2.371,2.371,0,0,0-.711-.092c-.2,0-.409.015-.611.029s-.41.029-.611.029a5.649,5.649,0,0,1-.627-.049,5.651,5.651,0,0,0-.627-.049,1.136,1.136,0,0,0-.654.159,1.016,1.016,0,0,1-.577.19A1.779,1.779,0,0,1,12.033,3a1.75,1.75,0,0,0-.557-.125h-.059c-.032,0-.066,0-.1,0s-.069,0-.1,0c-.061,0-.135.006-.167.049a.647.647,0,0,1-.575.281c-.075,0-.153-.007-.228-.013s-.156-.013-.228-.013a.981.981,0,0,0-.125.007,4.364,4.364,0,0,1-.567.035,10.092,10.092,0,0,1-1.652-.183c-.326-.054-.662-.111-1-.146a5.339,5.339,0,0,0-.568-.029,12.116,12.116,0,0,0-1.906.2,12.072,12.072,0,0,1-1.913.2l-.182,0-.346.384v.044Z"
-                  transform="translate(0.5 0.5)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" />
-              </svg>
-            </span>
-          </span>
-        </button>
-
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offCanvasMenu" aria-labelledby="offCanvasMenuLabel">
-          <div class="offcanvas-body">
-            <div class=" navbar-collapse justify-content-center" id="navbarNavDropdown">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#collection">COLLECTION</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#road-map">ROADMAP</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#live-paper">LIVE PAPER</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#team">TEAM</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#merchandise">MERCHANDISE</a>
-                </li>
-              </ul>
-            </div>
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4 d-none d-lg-block">
+        </div>
+        <div class="col-lg-4 text-center">
+          <a class="navbar-brand p-0" href="#">
+            <img src="./assets/images/bbbc-logo-2.svg" alt="bad-bitch-biker-logo" class="d-none d-lg-inline">
+            <img src="./assets/images/bbbc-logo-3.png" alt="bad-bitch-biker-logo" class="d-inline d-lg-none">
+          </a>
+        </div>
+        <div class="col-lg-4 text-end d-none d-lg-block">
+          <div class="social">
+            <ul class="list-inline d-inline-flex">
+              <li>
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-discord" viewBox="0 0 16 16">
+                    <path
+                      d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <div class="social d-none d-lg-block">
-          <ul class="list-inline d-flex">
-            <li>
-              <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      </div>
     </div>
   </header>
   <main>
-    <section id="collection" class="position-relative avatar-slider overflow-hidden">
-      <div class="container-fluid g-0 p-0">
-        <div class="row g-0">
-          <div class="col-12">
-            <div class="swiper mySwiperAvatar">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Anarchist.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Baby_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-1.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Beige.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Grey.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Bimbo_Boy 2.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Baby_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-1.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Beige.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Grey.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Bimbo_Boy 2.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Baby_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-1.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Beige.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Grey.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Bimbo_Boy 2.png" />
-                </div>
-              </div>
-            </div>
+    <section class="splash position-relative">
+      <div class="background-image d-block d-lg-none">
+        <video loop autoplay muted playsinline preload="metadata">
+          <source src="assets/videos/bbc-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="container large-container">
+
+        <div class="inner position-relative overflow-hidden">
+          <div class="background-image d-none d-lg-block">
+            <video loop autoplay muted playsinline preload="metadata">
+              <source src="assets/videos/bbc-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
-          <div class="col-12">
-            <div class="swiper mySwiperAvatar-Reverse">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Yellow.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Dark_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Green.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-3.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-4.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Yellow.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Dark_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Green.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-3.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-4.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Yellow.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Dark_Blue.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Green.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-2.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-3.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-4.png" />
-                </div>
-              </div>
+          <div class="cta mt-4 mt-lg-0 background-black content-margin-small">
+            <div class="heading-box">
+              <h2>WELCOME TO THE BAD BITCH BIKER CLUB</h2>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="swiper mySwiperAvatar">
-              <div class="swiper-wrapper ">
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-5.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-6.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Orange.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-7.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-8.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-9.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-5.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-6.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Orange.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-7.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-8.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-9.png" />
-                </div>
-                <!--- -->
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-5.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-6.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/Orange.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-7.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-8.png" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/images/avatar-slider/avatar-9.png" />
-                </div>
-              </div>
+            <div class="button-box button-accent">
+              <a href="" class="w-100 text-center">ENTER</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="welcome-text lg-padding-top">
-      <div class="container">
-        <div class="row g-3 align-items-end">
-          <div class="col-lg-7">
-            <div class="column-holder column-text content-margin md-padding-bottom">
-              <div class="heading-box">
-                <h2>WELCOME TO THE <br>BAD BITCH BIKER CLUB</h2>
-              </div>
-              <div class="description-box">
-                <p>
-                  B.B.B.C. is a collection of 10,000 unique hand-drawn bad bitch NFT’s living on the Etherium block
-                  chain. Each bad bitch
-                  biker girl is based on a random generation created from our selection of 311 different traits,
-                  including clothes,
-                  helmets, bikes, expressions and more. all of our bitches are bad, but some are the baddest of them
-                  all.
-                </p>
-                <p>
-                  When you buy bad
-                  bitch you are not only owning a piece of art or avatar. you are gaining access to our exclusive club,
-                  where we will
-                  showcase new projects, offers and merchandise. not to mention our bike racing game where you can play
-                  as one of our
-                  girls.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <div class="column-holder column-image content-margin">
-              <div class="image-box text-center text-lg-end">
-                <img src="./assets/images/bbbc-image-1.png" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <div class="inner background-accent">
-          <div class="row g-3 align-items-center text-center text-lg-start">
-            <div class="col-lg-3">
-              <div class="column-holder">
-                <div class="heading-box ">
-                  <h2>JOIN THE WHITELIST</h2>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="column-holder column-text ms-auto me-auto me-lg-5">
-                <div class="description-box">
-                  <p>
-                    If you're interested in joining the club and owning an B.B.B.C. NFT, register to our whitelist and
-                    keep up to date with
-                    launch information.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="column-holder">
-                <div class="button-box button-primary">
-                  <a href="#" class="text-center">JOIN THE WHITELIST</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="image-row" id="merchandise">
-      <div class="container">
-        <div class="inner bbbc-border-bottom md-padding-top md-padding-bottom">
-          <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-              <div class="column-holder text-start text-md-center">
-                <div class="row g-4 align-items-center justify-content-center">
-                  <div class="col-4 col-md-12">
-                    <div class="image-box">
-                      <img src="assets/images/bbbc-image-2.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-8 col-lg-12">
-                    <div class="description-box mx-0 mx-md-auto">
-                      <p>
-                        10,000 randomly generated Bad Bitch Tokens
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="column-holder text-md-center">
-                <div class="row g-4 align-items-center justify-content-center">
-                  <div class="col-4 col-md-12">
-                    <div class="image-box">
-                      <img src="assets/images/bbbc-image-3.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-8 col-lg-12">
-                    <div class="description-box mx-0 mx-md-auto">
-                      <p>
-                        All NFT’s Launching with the same cost 0.04 ETH
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="column-holder text-md-center">
-                <div class="row g-4 align-items-center justify-content-center">
-                  <div class="col-4 col-md-12">
-                    <div class="image-box">
-                      <img src="assets/images/bbbc-image-4.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-8 col-lg-12">
-                    <div class="description-box mx-0 mx-md-auto">
-                      <p>
-                        All usage rights given to owner of NFT
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="column-holder text-md-center">
-                <div class="row g-4 align-items-center justify-content-center">
-                  <div class="col-4 col-md-12">
-                    <div class="image-box">
-                      <img src="assets/images/bbbc-image-5.png" alt="">
-                    </div>
-                  </div>
-                  <div class="col-8 col-lg-12">
-                    <div class="description-box mx-0 mx-md-auto">
-                      <p>
-                        Members exclusive offers, merchandise and game installation
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="road-map md-padding-top" id="road-map">
-      <div class="container">
-        <div class="inner bbbc-border-bottom">
-          <div class="row g-3 align-items-end">
-            <div class="col-lg-7">
-              <div class="column-holder column-text content-margin md-padding-bottom">
-                <div class="heading-box">
-                  <h2>ROADMAP</h2>
-                </div>
-                <div class="phases">
-                  <div class="row mb-5">
-                    <div class="col-auto">
-
-                      <div class="phase color-accent fw-semibold d-flex align-items-center">Phase 1</div>
-                    </div>
-                    <div class="col">
-                      <div class="description-box">
-                        <p>
-                          The first phase of the Bad Bitch Biker Club is building an amazing online community across
-                          Twitter and Discord prior to
-                          our official mint and public sale of the 9999 collection.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row mb-5">
-                    <div class="col-auto">
-                      <div class="phase color-accent fw-semibold d-flex align-items-center">Phase 2</div>
-                    </div>
-                    <div class="col">
-                      <div class="description-box">
-                        <p>
-                          Coming very soon will be our Online Merchandise store. This store will have a wide variety of
-                          products options
-                          including: T-shirt, Hoodies, canvas prints, paper prints, acrylic prints, metal prints,
-                          pillows,
-                          blankets, poster
-                          prints, mugs, key rings and more. You will only be able to access the store by linking your
-                          NFT
-                          wallet to the our
-                          website. You must own a B.B.B.C NFT to access and purchase.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-auto">
-                      <div class="phase color-accent fw-semibold d-flex align-items-center">Phase 3</div>
-                    </div>
-                    <div class="col">
-                      <div class="description-box">
-                        <p>
-                          In the near future The Bad Bitch Biker Club will release its very own play to earn
-                          game(Already in
-                          Development). You
-                          will link your crypto wallet to the game. Once verified where you will be able to choose from
-                          the full
-                          range of Bad
-                          Bitch Biker Club Characters to play and explore. We are extremely excited at the progress
-                          we’ve already
-                          made on this
-                          game and will soon be asking across our community social pages for opinions on our plans and
-                          the idea
-                          behind it. We want
-                          to make it as fun and rewarding as possible for you all!
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="column-holder content-margin">
-                <div class="image-box">
-                  <img src="./assets/images/bbbc-image-6.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="team" id="team">
-      <div class="container">
-        <div class="inner md-padding-top md-padding-bottom content-margin bbbc-border-bottom">
-          <div class="heading-box">
-            <h2>THE TEAM</h2>
-          </div>
-          <div class="description-box">
-            <p>
-              Coming very soon will be our Online Merchandise store. This store will have a wide variety of products
-              options
-              including: T-shirt, Hoodies, canvas prints, paper prints, acrylic prints, metal prints, pillows, blankets,
-              poster
-              prints, mugs, key rings and more. You will only be able to access the store by linking your NFT wallet to
-              the our
-              website. You must own a B.B.B.C NFT to access and purchase...
-            </p>
-          </div>
-          <div class="swiper-js-team">
-            <div class="row g-5 justify-content-center">
-              <div class="col-4">
-                <div class="column-holder text-center content-margin-small">
-                  <div class="image-box">
-                    <img src="./assets/images/bbbc-team-1.png" alt="">
-                  </div>
-                  <div class="name-box fw-semibold">
-                    <span>SCRIBBLER</span>
-                  </div>
-                  <div class="description-box mx-auto">
-                    <p>
-                      Coming very soon will be our Online Merchandise store.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="column-holder text-center content-margin-small">
-                  <div class="image-box">
-                    <img src="./assets/images/bbbc-team-2.png" alt="">
-                  </div>
-                  <div class="name-box fw-semibold">
-                    <span>GAFFA</span>
-                  </div>
-                  <div class="description-box mx-auto">
-                    <p>
-                      Coming very soon will be our Online Merchandise store.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-4">
-                <div class="column-holder text-center content-margin-small">
-                  <div class="image-box">
-                    <img src="./assets/images/bbbc-team-3.png" alt="">
-                  </div>
-                  <div class="name-box fw-semibold">
-                    <span>PUNK</span>
-                  </div>
-                  <div class="description-box mx-auto">
-                    <p>
-                      Coming very soon will be our Online Merchandise store.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-              <div class="swiper-button-next d-flex d-md-none">
-                <svg xmlns="http://www.w3.org/2000/svg" id="Group_229" data-name="Group 229" width="26.864" height="44.23"
-                  viewBox="0 0 26.864 44.23">
-                  <path id="Path_2785" data-name="Path 2785"
-                    d="M9288.574,2761.253h2.81l6.2,6.005,1.114.678,4.263,5.182,2.711,2.615,2.132,2.276,2.712,4.359-8.137,10.9-5.715,5.279-5.812,5.376-2.663-.291-3.245-3.293.968-2.906,2.664-3.826,10.461-10.219.63-1.017-3.438-3.923-.678-1.356-4.7-5.521-3.051-2.18-1.89-2.567,1.114-3.584Z"
-                    transform="translate(-9284.204 -2760.397)" fill="#fff" />
-                  <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
-                    <path id="Path_2784" data-name="Path 2784"
-                      d="M537.557,458.062c-.194.209-.384.418-.578.627-.334.35-.669.7-1,1.045-.262.281-.521.562-.783.844-.266.258-.521.536-.8.771-1.121.939-2.253,1.866-3.382,2.8-.209.186-.414.376-.623.562q-1.345,1.174-2.694,2.344l-.84.76c-.258.16-.517.323-.646.4a12.6,12.6,0,0,0-1.383.008,3.063,3.063,0,0,1-2.774-1.083c-.669-.741-1.284-1.535-1.9-2.322a7.149,7.149,0,0,1-.524-.92c.3-.46.581-.882.908-1.376a1.678,1.678,0,0,1,.342-1.581c.258-.407.521-.813.794-1.212a3.373,3.373,0,0,0,.878-1.983c.574-.486,1.094-.931,1.615-1.372.205-.19.41-.384.616-.574q1.151-1.123,2.3-2.242l1.93-1.866.946-.9c.483-.471.969-.942,1.452-1.414q1.436-1.334,2.876-2.675c.065-.315.125-.612.2-.961-1.052-1.121-2.105-2.242-3.218-3.424a1.766,1.766,0,0,0-.733-1.429c-.258-.277-.513-.555-.771-.832l-1.493-1.641c-.194-.213-.384-.426-.578-.638l-2.542-2.9c-.19-.167-.38-.338-.57-.505a7.72,7.72,0,0,1-3.7-3.754c.186-.551.365-1.068.536-1.588a5.608,5.608,0,0,0,.22-.775,6.762,6.762,0,0,1,2.8-4.241c.407.205.707.357.977.49.456-.072.863-.133,1.341-.205l3.013,2.287c.346.342.692.684,1.041,1.026l1.717,1.809c.068.068.137.141.205.209a1.991,1.991,0,0,0,1.6.878l.407.441a10.1,10.1,0,0,0,2.018,3.215q1.773,1.881,3.545,3.754a7.156,7.156,0,0,0,.635.524l1.569,1.33c.084.293.171.585.251.855.422.361.809.7,1.2,1.03a5.424,5.424,0,0,0,.851,1.516,8.973,8.973,0,0,1,1.691,2.926c-.22.251-.426.479-.68.768a2.826,2.826,0,0,1-.878,1.736q-3.243,4.212-6.463,8.439c-.186.209-.376.418-.562.631-.114.133-.228.262-.342.4Zm-12.665-.749c-.015.034-.027.068-.042.1a15.887,15.887,0,0,0-1.288,1.292c-.494.616-.885,1.311-1.357,1.945a4.322,4.322,0,0,0-.448,3.53.727.727,0,0,0,.209.35,8.426,8.426,0,0,0,2.785,2.265h1.459c2.527-2.2,5.046-4.4,7.448-6.494.388-.513.654-.95,1-1.315a79.952,79.952,0,0,0,7.869-9.2,45.584,45.584,0,0,0,2.778-3.944,17.43,17.43,0,0,0-2.88-4.146c-.464-.505-1.056-.912-1.072-1.581a9.83,9.83,0,0,0-1.318-1.1,5.809,5.809,0,0,1-1.569-1.474c-1.258-1.512-2.527-3.013-3.8-4.518-.376-.445-.76-.885-1.136-1.326a9.336,9.336,0,0,1-1.562-1.148c-1.391-1.338-2.751-2.713-4.127-4.066a4.622,4.622,0,0,0-1.47-1.091h-1.839c-1.687,1.159-2.151,3.025-2.344,5.046a4.873,4.873,0,0,0,2.04,2.386,7.841,7.841,0,0,1,1.478,1.224c1.015,1.083,2.04,2.162,2.99,3.3a50.432,50.432,0,0,1,3.671,4.59,35.5,35.5,0,0,0,2.994,3.541c.027.4.053.806.08,1.243-.1.114-.2.251-.323.372q-4.657,4.793-9.321,9.572a6.244,6.244,0,0,1-.9.642Z"
-                      transform="translate(-519.63 -424.02)" fill="#1d2221" />
-                  </g>
-                </svg>
-              </div>
-              <div class="swiper-button-prev d-flex d-md-none">
-                <svg xmlns="http://www.w3.org/2000/svg" width="26.196" height="43.238" viewBox="0 0 26.196 43.238">
-                  <g id="Group_230" data-name="Group 230" transform="translate(0)">
-                    <path id="Path_2787" data-name="Path 2787"
-                      d="M9381.568,2762.7c-.692.818-7.555,7.177-7.555,7.177l-3.4,4.281-6.988,7.555v1.448l2.015,3.148,8.374,9.7,1.007.63,7.249,7.009,3.477-.084,2.122-1.645.423-2.51-6.47-7.829-1.452-.894-4.1-4.373-2.421-3.674,1.171-2.385,7.621-7.749,5.1-6-1.64-3.465-2.868-1.118Z"
-                      transform="translate(-9363.008 -2761.307)" fill="#fff" />
-                    <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
-                      <path id="Path_2786" data-name="Path 2786"
-                        d="M40.357,437.493q1.368-1.368,2.732-2.736c.3-.388.6-.775.908-1.163-.027-.019-.049-.042-.076-.061.266-.152.528-.3.825-.467.11-.98,1.049-1.273,1.592-1.915.467-.467.939-.935,1.406-1.406.293-.342.585-.68.878-1.022l1.866-1.866a2.714,2.714,0,0,0,1.292-1.676,11.853,11.853,0,0,0,1.17-.509,3.479,3.479,0,0,1,3.127-.3l.619.426a7.057,7.057,0,0,1,2.405,2.61,2.763,2.763,0,0,1,.494,2.329l-1.383,1.474c-.5.692-1,1.387-1.509,2.078-.54.555-1.079,1.106-1.622,1.66-.3.319-.6.638-.893.954q-.735.752-1.467,1.5l-1.341,1.326c-.068.065-.137.133-.205.2-.813.722-1.36,1.68-2.143,2.428-.19.205-.38.414-.566.619l-2.223,2.439.156.068c-.091.433-.182.87-.285,1.364.319.407.676.866,1.037,1.326a2.787,2.787,0,0,0,.422,1.121c.6.749,1.277,1.44,1.923,2.154.194.209.384.418.578.627.566.635,1.121,1.277,1.7,1.9a1.842,1.842,0,0,0,.7.578,3.458,3.458,0,0,1,1.858,1.5l.718.787c.543.6,1.091,1.2,1.691,1.862-.034.733.54,1.182,1.06,1.664.255.277.513.555.768.836.65.794,1.3,1.585,1.934,2.352a6.326,6.326,0,0,1-1.227,3.085c-.323.152-.631.3-.825.384-.353.483-.631.866-.969,1.334l-4.024-.467c-.407-.376-.874-.828-1.364-1.254-.521-.448-1.064-.866-1.6-1.3-.266-.243-.532-.483-.8-.726l-.6-.536c-.289-.289-.578-.578-.863-.866l-.494-.562c-.186-.209-.376-.418-.562-.627a4.138,4.138,0,0,0-2.747-1.945c-.255-.49-.49-.942-.726-1.391-.156-.182-.312-.369-.467-.551-.315-.3-.627-.593-.942-.889a.836.836,0,0,1,.095-.065c-.2-.319-.407-.635-.608-.954l-.616-.616c-.4-.426-.79-.847-1.189-1.273-.217-.224-.433-.452-.65-.676l-.9-.95c-.331-.35-.657-.7-.988-1.053-.3-.342-.593-.688-.889-1.03l-.555-.646a19.837,19.837,0,0,1-1.634-3.31c-.015-.205-.03-.407-.046-.612a2.278,2.278,0,0,1,.9-1.759,16.756,16.756,0,0,0,1.573-1.74l.065-.631c.3-.3.589-.616.9-.9.437-.4.893-.787,1.341-1.178.255-.281.509-.559.764-.84.167-.182.334-.369.5-.551Zm-4.921,8.356c.22.323.437.627.642.942a15.443,15.443,0,0,0,1.132,1.706c1.755,1.995,3.56,3.94,5.323,5.924.448.5.806,1.083,1.2,1.63.4.5.779,1.015,1.189,1.5a7.724,7.724,0,0,0,.794.783,5.96,5.96,0,0,1,.574.433,65.6,65.6,0,0,0,7.326,7.166H56.65c.608-.528,1.041-.908,1.6-1.4.213-.581.483-1.315.783-2.124-.882-1-1.759-1.976-2.607-2.971-.414-.486-.764-1.03-1.14-1.546-.342-.513-.79-.946-1.148-1.448-.559-.779-.98-1.672-2-2-.179-.057-.319-.255-.464-.407-1.436-1.493-2.892-2.968-4.29-4.491a23.766,23.766,0,0,1-1.527-2.04,3.332,3.332,0,0,0-.813-.749c-.308-.255-.581-.551-.828-.794.167-.555.3-1,.437-1.436,1.22-1.482,2.553-2.876,3.88-4.279.4-.418.9-.764.931-1.433,0-.11.144-.224.243-.323,1.459-1.467,2.914-2.937,4.385-4.393.733-.73,1.5-1.417,2.238-2.151.452-.452.866-.942,1.284-1.425.806-.931,1.018-1.885.517-2.637-.471-.711-1.022-1.372-1.425-1.9-.692-.232-1.174-.4-1.752-.593l-1.854.654c-.828.878-1.543,1.721-2.344,2.47-1.459,1.36-2.971,2.664-4.461,4a4.659,4.659,0,0,0-.429.437c-.353.407-.7.825-1.041,1.235-.338.6-5.475,6.209-5.973,6.555-1.319,1.645-2.341,2.926-3.408,4.256v.844Z"
-                        transform="translate(-34.3 -424.128)" fill="#1d2221" />
-                    </g>
-                  </g>
-                </svg>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="live-paper" id="live-paper">
-      <div class="container">
-        <div class="inner md-padding-top md-padding-bottom content-margin">
-          <div class="heading-box">
-            <h2>LIVEPAPER</h2>
-          </div>
-          <div class="post-holder">
-            <div class="post-box content-margin">
-              <div class="post-date color-accent fw-semibold">24/05/23</div>
-              <div class="description-box">
-                <p>
-                  Coming very soon will be our Online Merchandise store. This store will have a wide variety of products
-                  options
-                  including: T-shirt, Hoodies, canvas prints, paper prints, acrylic prints, metal prints, pillows,
-                  blankets, poster
-                  prints, mugs, key rings and more. You will only be able to access the store by linking your NFT wallet
-                  to the our
-                  website. You must own a B.B.B.C NFT to access and purchase...
-                </p>
-              </div>
-              <div class="link-box">
-                <a href="">Continue reading</a>
-              </div>
-            </div>
-            <div class="post-box content-margin">
-              <div class="post-date color-accent fw-semibold">24/05/23</div>
-              <div class="description-box">
-                <p>
-                  Coming very soon will be our Online Merchandise store. This store will have a wide variety of products
-                  options
-                  including: T-shirt, Hoodies, canvas prints, paper prints, acrylic prints, metal prints, pillows,
-                  blankets, poster
-                  prints, mugs, key rings and more. You will only be able to access the store by linking your NFT wallet
-                  to the our
-                  website. You must own a B.B.B.C NFT to access and purchase...
-                </p>
-              </div>
-              <div class="link-box">
-                <a href="">Continue reading</a>
-              </div>
-            </div>
-          </div>
-          <div class="button-box button-accent button-large-width mt-5">
-            <a href="" class="text-center">
-              ALL POSTS
-            </a>
-          </div>
+    <section class="text-section sm-padding-bottom sm-padding-top">
+      <div class="container large-container">
+        <div class="description-box">
+          <p>
+            B.B.B.C is a collection of 10,000 unique hand-drawn bad bitch NFT’s living on the Etherium block chain. Each
+            bad bitch
+            biker girl is based on a random generation created from our selection of 311 different traits, including
+            clothes,
+            helmets, bikes, expressions and more. all of our bitches are bad, but some are the baddest of them all.
+          </p>
         </div>
       </div>
     </section>

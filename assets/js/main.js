@@ -1,8 +1,9 @@
 jQuery(document).ready(function () {
-  swiper_sliders();
+  swiper__sliders();
 });
 
-function swiper_sliders() {
+
+function swiper__sliders() {
   var mySwiperLoop = new Swiper(".mySwiperAvatar", {
     spaceBetween: 20,
     freeMode: true,
@@ -40,22 +41,15 @@ function swiper_sliders() {
 
   if (window.innerWidth < 768) {
     jQuery('.swiper-js-team').addClass('swiper');
-    jQuery('.swiper-js-team .row').addClass('swiper-wrapper').removeClass('row');
-    jQuery('.swiper-js-team .col-4').addClass('swiper-slide');
-
+    jQuery('.swiper-js-team .row').addClass('swiper-wrapper').removeClass('row g5');
+    jQuery('.swiper-js-team .col-4').addClass('swiper-slide').removeClass('col-4');
     const swiperTeam = new Swiper('.swiper-js-team', {
-      // Optional parameters
       loop: true,
-      slidesPerView: 1,
-      // Navigation arrows
-
+      slidesPerView: 2,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next-team',
+        prevEl: '.swiper-button-prev-team',
       },
-
     });
-
-
   }
 }
