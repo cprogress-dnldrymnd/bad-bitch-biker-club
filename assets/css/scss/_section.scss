@@ -219,7 +219,7 @@ section.text-section {
 }
 
 .mySwiperAvatar, .mySwiperAvatar-Reverse {
-  .swiper-slide {
+  * {
     pointer-events: none !important;
   }
 }
