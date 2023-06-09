@@ -120,31 +120,33 @@ section.road-map {
         }
       }
 
-      &:hover {
-        .phase {
-          &:before {
-            opacity: 1;
-          }
-        }
-      }
-
       @media(max-width: 360px) {
         flex-direction: column;
       }
-    }
 
-    .phase {
-      &:before {
-        content: '';
-        background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.144" height="17.144" viewBox="0 0 17.144 17.144"> <path id="Icon_metro-my-location" data-name="Icon metro-my-location" d="M12.428,9.311a3.117,3.117,0,1,0,3.117,3.117,3.116,3.116,0,0,0-3.117-3.117Zm6.967,2.338a7.009,7.009,0,0,0-6.187-6.187V3.856H11.649V5.461a7.009,7.009,0,0,0-6.187,6.187H3.856v1.559H5.461a7.009,7.009,0,0,0,6.187,6.187V21h1.559V19.395a7.009,7.009,0,0,0,6.187-6.187H21V11.649H19.395Zm-6.967,6.234a5.455,5.455,0,1,1,5.455-5.455A5.456,5.456,0,0,1,12.428,17.883Z" transform="translate(-3.856 -3.856)" fill="%23fff"/></svg>');
-        background-size: 17px;
-        width: 17px;
-        height: 17px;
-        display: inline-block;
-        margin-right: 10px;
-        opacity: 0;
+      .phase {
+        &:before {
+          content: '';
+          width: 17px;
+          height: 17px;
+          display: inline-block;
+          margin-right: 10px;
+        }
+      }
+
+      &:first-child {
+        .phase {
+          &:before {
+            content: '';
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.144" height="17.144" viewBox="0 0 17.144 17.144"> <path id="Icon_metro-my-location" data-name="Icon metro-my-location" d="M12.428,9.311a3.117,3.117,0,1,0,3.117,3.117,3.116,3.116,0,0,0-3.117-3.117Zm6.967,2.338a7.009,7.009,0,0,0-6.187-6.187V3.856H11.649V5.461a7.009,7.009,0,0,0-6.187,6.187H3.856v1.559H5.461a7.009,7.009,0,0,0,6.187,6.187V21h1.559V19.395a7.009,7.009,0,0,0,6.187-6.187H21V11.649H19.395Zm-6.967,6.234a5.455,5.455,0,1,1,5.455-5.455A5.456,5.456,0,0,1,12.428,17.883Z" transform="translate(-3.856 -3.856)" fill="%23fff"/></svg>');
+            background-size: 17px;
+            margin-right: 10px;
+          }
+        }
       }
     }
+
+
   }
 }
 
@@ -187,7 +189,7 @@ section.splash {
     }
 
     @media(min-width: 992px) {
-      min-height: 100vh;
+      min-height: calc(100vh - 135px);
       border-radius: 5px;
     }
   }
