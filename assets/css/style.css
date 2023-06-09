@@ -8764,4 +8764,7 @@ section.splash {
 section.text-section .description-box {
   max-width: 1200px; }
 
+.mySwiperAvatar .swiper-slide {
+  pointer-events: none !important; }
+
 /*# sourceMappingURL=style.css.map */

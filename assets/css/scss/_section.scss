@@ -217,3 +217,9 @@ section.text-section {
     max-width: 1200px;
   }
 }
+
+.mySwiperAvatar {
+  .swiper-slide {
+    pointer-events: none !important;
+  }
+}
