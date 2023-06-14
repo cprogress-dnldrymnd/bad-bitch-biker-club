@@ -8369,6 +8369,9 @@ textarea.form-control-lg {
   --light-color: #B8B8B8;
   --gray-color: #575757; }
 
+html {
+  scroll-behavior: initial !important; }
+
 a:hover {
   color: var(--white-color); }
 
@@ -8462,6 +8465,9 @@ section {
 .swiper-button-next:after,
 .swiper-button-prev:after {
   content: none !important; }
+
+.home-main {
+  padding-top: 123px; }
 
 .background-black {
   background-color: var(--black-color);
@@ -8561,6 +8567,9 @@ section.team .row .description-box {
 header {
   z-index: 9;
   position: relative; }
+  header.main-header {
+    left: 0;
+    right: 0; }
   @media (max-width: 991px) {
     header .navbar-brand {
       z-index: 9999;

@@ -2,28 +2,44 @@ jQuery(document).ready(function () {
   swiper__sliders();
   header_social();
   mobile_menu();
+  anchor_links();
 });
 
 function mobile_menu() {
-  var myOffcanvas = document.getElementById('offCanvasMenu')
-  myOffcanvas.addEventListener('show.bs.offcanvas', function () {
-    jQuery('body').addClass('menu-active');
+  if (window.innerWidth < 992) {
+    var myOffcanvas = document.getElementById('offCanvasMenu')
+    myOffcanvas.addEventListener('show.bs.offcanvas', function () {
+      jQuery('body').addClass('menu-active');
+    });
+    myOffcanvas.addEventListener('shown.bs.offcanvas', function () {
+      setTimeout(function () {
+        jQuery('body').addClass('show-menu');
+      }, 300);
+    });
+    myOffcanvas.addEventListener('hide.bs.offcanvas', function () {
+      jQuery('body').removeClass('show-menu');
+    });
+    myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
+      jQuery('body').removeClass('menu-active');
+    });
 
-  });
-
-  myOffcanvas.addEventListener('shown.bs.offcanvas', function () {
-    setTimeout(function () {
-      jQuery('body').addClass('show-menu');
-    }, 300);
-  });
-  myOffcanvas.addEventListener('hide.bs.offcanvas', function () {
-    jQuery('body').removeClass('show-menu');
-  });
-  myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
-    jQuery('body').removeClass('menu-active');
-  });
+    jQuery('.nav-link').click(function (e) {
+      jQuery('.navbar-toggler').click();
+    });
+  }
 }
 
+function anchor_links() {
+  var $root = jQuery('html, body');
+
+  jQuery('a[href^="#"]').click(function () {
+    $root.animate({
+      scrollTop: (jQuery(jQuery.attr(this, 'href')).offset().top - 123)
+    }, 500);
+
+    return false;
+  });
+}
 
 function header_social() {
   if (window.innerWidth < 992) {
