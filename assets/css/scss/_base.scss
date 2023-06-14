@@ -178,6 +178,7 @@ section {
     padding: 50% 0;
     background-color: var(--white-color);
     border-radius: 10px;
+
     img {
       position: absolute;
       left: 0;
@@ -186,6 +187,7 @@ section {
       height: 100%;
       object-fit: cover;
     }
+
     &:before {
       content: 'GIVEAWAYS';
       color: var(--black-color);
@@ -200,6 +202,7 @@ section {
       padding: 5px;
       width: 250px;
       text-align: center;
+      z-index: 1;
     }
   }
 }
