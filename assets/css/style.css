@@ -8502,7 +8502,8 @@ section {
       line-height: 1;
       padding: 5px;
       width: 250px;
-      text-align: center; }
+      text-align: center;
+      z-index: 1; }
 
 .background-black {
   background-color: var(--black-color);
