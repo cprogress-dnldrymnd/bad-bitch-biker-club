@@ -2,6 +2,13 @@ header {
   z-index: 9;
   position: relative;
 
+  .navbar-brand {
+    @media(max-width: 991px) {
+      z-index: 9999;
+      position: relative;
+    }
+  }
+
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -11,12 +18,26 @@ header {
         padding: 0 1.25rem;
 
         @media (max-width: 1199px) {
-          padding: 0 1rem;
+          padding: 0 10px;
           letter-spacing: 0.5px;
         }
+
+        @media (max-width: 1199px) and(min-width: 992px) {
+          font-size: 14px;
+        }
+
+        @media(max-width: 991px) {
+          padding-left: 0;
+          padding-right: 0;
+        }
+
         &:hover {
           color: var(--accent-color);
         }
+      }
+
+      @media(max-width: 991px) {
+        margin-bottom: 2rem;
       }
     }
   }
@@ -33,6 +54,7 @@ header {
 
       span {
         position: absolute;
+        transition: 0.3s ease-in-out;
 
         svg {
           width: 40px;
@@ -61,11 +83,17 @@ header {
         height: 30px;
       }
     }
+
+    @media(max-width: 991px) {
+      z-index: 9999;
+      position: relative;
+    }
   }
 
   #offCanvasMenu {
     background-color: transparent;
     border: none;
+    height: auto;
 
     @media (min-width: 992px) {
       position: relative;
@@ -78,13 +106,77 @@ header {
     }
 
     .offcanvas-body {
+      .navbar-collapse {
+        @media (max-width: 991px) {
+          transition: 0.3s ease-in-out;
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+      }
+
       @media (max-width: 991px) {
         background-color: var(--black-color);
       }
     }
 
-    @media (max-width: 575px) {
-      max-width: 300px;
+    @media (max-width: 991px) {
+      height: 100vh;
+      padding-top: 123px;
+    }
+  }
+}
+
+.header-bottom-mobile {
+  content: '';
+  height: 13px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  transition: 300ms;
+  transform: translateY(100%);
+  z-index: 9;
+}
+
+body {
+  &.menu-active {
+    .navbar-toggler {
+      .bbbc-navbar-toggler-icon {
+        span {
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            top: 10px;
+          }
+
+          &:nth-child(2) {
+            opacity: 0;
+          }
+
+          &:nth-child(3) {
+            top: 10px;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+
+  &.show-menu {
+    header {
+      #offCanvasMenu {
+        .offcanvas-body {
+          .navbar-collapse {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    .header-bottom-mobile {
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 }

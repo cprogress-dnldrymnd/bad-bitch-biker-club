@@ -1,7 +1,35 @@
 jQuery(document).ready(function () {
   swiper__sliders();
+  header_social();
+  mobile_menu();
 });
 
+function mobile_menu() {
+  var myOffcanvas = document.getElementById('offCanvasMenu')
+  myOffcanvas.addEventListener('show.bs.offcanvas', function () {
+    jQuery('body').addClass('menu-active');
+
+  });
+
+  myOffcanvas.addEventListener('shown.bs.offcanvas', function () {
+    setTimeout(function () {
+      jQuery('body').addClass('show-menu');
+    }, 300);
+  });
+  myOffcanvas.addEventListener('hide.bs.offcanvas', function () {
+    jQuery('body').removeClass('show-menu');
+  });
+  myOffcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    jQuery('body').removeClass('menu-active');
+  });
+}
+
+
+function header_social() {
+  if (window.innerWidth < 992) {
+    jQuery('header .social').appendTo('.navbar-collapse').removeClass('d-none');
+  }
+}
 
 function swiper__sliders() {
   var mySwiperLoop = new Swiper(".mySwiperAvatar", {

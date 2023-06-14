@@ -8369,6 +8369,9 @@ textarea.form-control-lg {
   --light-color: #B8B8B8;
   --gray-color: #575757; }
 
+a:hover {
+  color: var(--white-color); }
+
 img {
   max-width: 100%; }
 
@@ -8412,6 +8415,8 @@ a {
 .link-box a {
   text-decoration: underline;
   color: var(--white-color); }
+  .link-box a:hover {
+    color: var(--accent-color) !important; }
 
 .button-box a {
   padding: 1.125rem 1.5rem;
@@ -8556,6 +8561,10 @@ section.team .row .description-box {
 header {
   z-index: 9;
   position: relative; }
+  @media (max-width: 991px) {
+    header .navbar-brand {
+      z-index: 9999;
+      position: relative; } }
   header .navbar-nav .nav-item .nav-link {
     color: var(--white-color);
     font-weight: 500;
@@ -8563,10 +8572,20 @@ header {
     padding: 0 1.25rem; }
     @media (max-width: 1199px) {
       header .navbar-nav .nav-item .nav-link {
-        padding: 0 1rem;
+        padding: 0 10px;
         letter-spacing: 0.5px; } }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      header .navbar-nav .nav-item .nav-link {
+        font-size: 14px; } }
+    @media (max-width: 991px) {
+      header .navbar-nav .nav-item .nav-link {
+        padding-left: 0;
+        padding-right: 0; } }
     header .navbar-nav .nav-item .nav-link:hover {
       color: var(--accent-color); }
+  @media (max-width: 991px) {
+    header .navbar-nav .nav-item {
+      margin-bottom: 2rem; } }
   header .navbar-toggler {
     padding: 0;
     line-height: 1;
@@ -8576,7 +8595,8 @@ header {
       width: 40px;
       height: 40px; }
       header .navbar-toggler .bbbc-navbar-toggler-icon span {
-        position: absolute; }
+        position: absolute;
+        transition: 0.3s ease-in-out; }
         header .navbar-toggler .bbbc-navbar-toggler-icon span svg {
           width: 40px;
           height: auto; }
@@ -8593,9 +8613,14 @@ header {
         header .navbar-toggler .bbbc-navbar-toggler-icon {
           width: 30px;
           height: 30px; } }
+    @media (max-width: 991px) {
+      header .navbar-toggler {
+        z-index: 9999;
+        position: relative; } }
   header #offCanvasMenu {
     background-color: transparent;
-    border: none; }
+    border: none;
+    height: auto; }
     @media (min-width: 992px) {
       header #offCanvasMenu {
         position: relative;
@@ -8606,11 +8631,44 @@ header {
         opacity: 1;
         visibility: visible; } }
     @media (max-width: 991px) {
+      header #offCanvasMenu .offcanvas-body .navbar-collapse {
+        transition: 0.3s ease-in-out;
+        transform: translateY(-100%);
+        opacity: 0; } }
+    @media (max-width: 991px) {
       header #offCanvasMenu .offcanvas-body {
         background-color: var(--black-color); } }
-    @media (max-width: 575px) {
+    @media (max-width: 991px) {
       header #offCanvasMenu {
-        max-width: 300px; } }
+        height: 100vh;
+        padding-top: 123px; } }
+
+.header-bottom-mobile {
+  content: '';
+  height: 13px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--accent-color);
+  transition: 300ms;
+  transform: translateY(100%);
+  z-index: 9; }
+
+body.menu-active .navbar-toggler .bbbc-navbar-toggler-icon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px; }
+body.menu-active .navbar-toggler .bbbc-navbar-toggler-icon span:nth-child(2) {
+  opacity: 0; }
+body.menu-active .navbar-toggler .bbbc-navbar-toggler-icon span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-45deg); }
+body.show-menu header #offCanvasMenu .offcanvas-body .navbar-collapse {
+  transform: translateY(0);
+  opacity: 1; }
+body.show-menu .header-bottom-mobile {
+  transform: translateY(0);
+  opacity: 1; }
 
 footer {
   border-bottom: 14px solid var(--accent-color); }
