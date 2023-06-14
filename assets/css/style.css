@@ -8447,6 +8447,13 @@ a {
 .button-box.button-large-width a {
   max-width: 360px;
   width: 100%; }
+.button-box.button-small a {
+  font-size: 15px;
+  max-width: 260px;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  line-height: 1; }
 
 .social a {
   color: var(--white-color); }
@@ -8468,6 +8475,27 @@ section {
 
 .home-main {
   padding-top: 123px; }
+
+.giveaways {
+  max-width: 398px; }
+  .giveaways .image-box {
+    padding: 50% 0;
+    background-color: var(--white-color);
+    border-radius: 10px; }
+    .giveaways .image-box:before {
+      content: 'GIVEAWAYS';
+      color: var(--black-color);
+      font-weight: bold;
+      font-size: 20px;
+      background-color: var(--accent-color);
+      position: absolute;
+      right: -54px;
+      bottom: 50px;
+      transform: rotate(-45deg);
+      line-height: 1;
+      padding: 5px;
+      width: 250px;
+      text-align: center; }
 
 .background-black {
   background-color: var(--black-color);
@@ -8799,6 +8827,9 @@ section.road-map .phases .row:first-child .phase:before {
   background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="17.144" height="17.144" viewBox="0 0 17.144 17.144"> <path id="Icon_metro-my-location" data-name="Icon metro-my-location" d="M12.428,9.311a3.117,3.117,0,1,0,3.117,3.117,3.116,3.116,0,0,0-3.117-3.117Zm6.967,2.338a7.009,7.009,0,0,0-6.187-6.187V3.856H11.649V5.461a7.009,7.009,0,0,0-6.187,6.187H3.856v1.559H5.461a7.009,7.009,0,0,0,6.187,6.187V21h1.559V19.395a7.009,7.009,0,0,0,6.187-6.187H21V11.649H19.395Zm-6.967,6.234a5.455,5.455,0,1,1,5.455-5.455A5.456,5.456,0,0,1,12.428,17.883Z" transform="translate(-3.856 -3.856)" fill="%23fff"/></svg>');
   background-size: 17px;
   margin-right: 10px; }
+@media (min-width: 992px) {
+  section.road-map {
+    line-height: 1.5; } }
 
 section.live-paper .post-holder .post-box {
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -8831,7 +8862,8 @@ section.splash {
 section.text-section .description-box {
   max-width: 1200px; }
 
-.mySwiperAvatar *, .mySwiperAvatar-Reverse * {
+.mySwiperAvatar *,
+.mySwiperAvatar-Reverse * {
   pointer-events: none !important; }
 
 /*# sourceMappingURL=style.css.map */

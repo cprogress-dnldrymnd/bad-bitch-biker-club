@@ -5,9 +5,11 @@
   --light-color: #B8B8B8;
   --gray-color: #575757;
 }
+
 html {
   scroll-behavior: initial !important;
 }
+
 a {
   &:hover {
     color: var(--white-color);
@@ -116,6 +118,17 @@ a {
       width: 100%;
     }
   }
+
+  &.button-small {
+    a {
+      font-size: 15px;
+      max-width: 260px;
+      width: 100%;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      line-height: 1;
+    }
+  }
 }
 
 .social {
@@ -156,4 +169,30 @@ section {
 
 .home-main {
   padding-top: 123px;
+}
+
+.giveaways {
+  max-width: 398px;
+
+  .image-box {
+    padding: 50% 0;
+    background-color: var(--white-color);
+    border-radius: 10px;
+
+    &:before {
+      content: 'GIVEAWAYS';
+      color: var(--black-color);
+      font-weight: bold;
+      font-size: 20px;
+      background-color: var(--accent-color);
+      position: absolute;
+      right: -54px;
+      bottom: 50px;
+      transform: rotate(-45deg);
+      line-height: 1;
+      padding: 5px;
+      width: 250px;
+      text-align: center;
+    }
+  }
 }

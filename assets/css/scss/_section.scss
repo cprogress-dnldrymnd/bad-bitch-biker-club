@@ -157,8 +157,10 @@ section.road-map {
         }
       }
     }
+  }
 
-
+  @media(min-width: 992px) {
+    line-height: 1.5;
   }
 }
 
@@ -218,7 +220,8 @@ section.text-section {
   }
 }
 
-.mySwiperAvatar, .mySwiperAvatar-Reverse {
+.mySwiperAvatar,
+.mySwiperAvatar-Reverse {
   * {
     pointer-events: none !important;
   }
