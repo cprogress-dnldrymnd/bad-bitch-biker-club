@@ -74,7 +74,7 @@ function swiper__sliders() {
     allowTouchMove: false,
     freeModeMomentum: false,
     autoplay: {
-      delay: 350,
+      delay: 10000,
       disableOnInteraction: false,
     },
     effect: 'fade',
