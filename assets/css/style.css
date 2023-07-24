@@ -8481,7 +8481,10 @@ section {
   .giveaways .image-carousel {
     border-radius: 10px;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    background-color: var(--white-color); }
+    .giveaways .image-carousel img {
+      width: 100%; }
     .giveaways .image-carousel:before {
       content: 'GIVEAWAYS';
       color: var(--black-color);
@@ -8496,7 +8499,7 @@ section {
       padding: 5px;
       width: 250px;
       text-align: center;
-      z-index: 1; }
+      z-index: 2; }
   .giveaways .image-box {
     padding: 50% 0;
     background-color: var(--white-color);
