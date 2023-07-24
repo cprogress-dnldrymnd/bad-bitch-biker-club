@@ -77,6 +77,10 @@ function swiper__sliders() {
       delay: 350,
       disableOnInteraction: false,
     },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
 
   });
 
