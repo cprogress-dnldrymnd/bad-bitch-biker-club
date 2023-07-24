@@ -66,6 +66,24 @@ function swiper__sliders() {
 
 
 
+  var mySwiperLoop = new Swiper(".mySwiperAvatar-Single", {
+    spaceBetween: 0,
+    loop: true,
+    slidesPerView: 1,
+    simulateTouch: false,
+    allowTouchMove: false,
+    freeModeMomentum: false,
+    autoplay: {
+      delay: 350,
+      disableOnInteraction: false,
+    },
+
+  });
+
+
+
+
+
   var mySwiperLoopReverse = new Swiper(".mySwiperAvatar-Reverse", {
     spaceBetween: 20,
     freeMode: true,
