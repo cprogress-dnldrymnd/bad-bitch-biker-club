@@ -175,6 +175,10 @@ section {
   max-width: 398px;
 
   .image-carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background-color: var(--white-color);
     &:before {
       content: 'GIVEAWAYS';
       color: var(--black-color);
