@@ -64,6 +64,23 @@ function swiper__sliders() {
 
   });
 
+  var mySwiperLoop = new Swiper(".mySwiperAvatar-Single", {
+    spaceBetween: 0,
+    freeMode: true,
+    loop: true,
+    slidesPerView: 1,
+    simulateTouch: false,
+    allowTouchMove: false,
+    freeModeMomentum: false,
+    autoplay: {
+      delay: .35,
+      disableOnInteraction: false,
+    },
+
+  });
+
+
+
 
 
   var mySwiperLoopReverse = new Swiper(".mySwiperAvatar-Reverse", {
