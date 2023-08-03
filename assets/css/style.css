@@ -8430,7 +8430,8 @@ a {
   font-size: 1.375rem;
   text-decoration: none;
   line-height: 1.5;
-  border: 3px solid; }
+  border: 3px solid;
+  text-transform: uppercase; }
 .button-box.button-primary a,
 .button-box.button-primary button {
   background-color: var(--black-color);
