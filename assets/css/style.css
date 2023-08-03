@@ -8604,21 +8604,21 @@ section {
 .fw-semibold {
   font-weight: 600; }
 
-@media (min-width: 1200px) {
-  .container.large-container {
-    max-width: 1140px; } }
 @media (min-width: 1500px) {
-  .container.small-container {
+  .container.large-container {
     max-width: 1420px; } }
 @media (min-width: 1600px) {
-  .container.small-container {
+  .container.large-container {
     max-width: 1520px; } }
 @media (min-width: 1700px) {
-  .container.small-container {
+  .container.large-container {
     max-width: 1620px; } }
 @media (min-width: 1800px) {
-  .container.small-container {
+  .container.large-container {
     max-width: 1720px; } }
+@media (min-width: 1200px) {
+  .container.small-container {
+    max-width: 1140px; } }
 
 .bbbc-border-bottom {
   border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
