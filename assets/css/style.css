@@ -8421,7 +8421,8 @@ a {
   .link-box a:hover {
     color: var(--accent-color) !important; }
 
-.button-box a {
+.button-box a,
+.button-box button {
   padding: 1.125rem 1.5rem;
   border-radius: 5px;
   display: inline-block;
@@ -8430,24 +8431,30 @@ a {
   text-decoration: none;
   line-height: 1.5;
   border: 3px solid; }
-.button-box.button-primary a {
+.button-box.button-primary a,
+.button-box.button-primary button {
   background-color: var(--black-color);
   color: var(--accent-color);
   border-color: var(--black-color); }
-  .button-box.button-primary a:hover {
+  .button-box.button-primary a:hover,
+  .button-box.button-primary button:hover {
     background-color: var(--accent-color);
     color: var(--black-color); }
-.button-box.button-accent a {
+.button-box.button-accent a,
+.button-box.button-accent button {
   background-color: var(--accent-color);
   color: var(--black-color);
   border-color: var(--accent-color); }
-  .button-box.button-accent a:hover {
+  .button-box.button-accent a:hover,
+  .button-box.button-accent button:hover {
     background-color: var(--black-color);
     color: var(--accent-color); }
-.button-box.button-large-width a {
+.button-box.button-large-width a,
+.button-box.button-large-width button {
   max-width: 360px;
   width: 100%; }
-.button-box.button-small a {
+.button-box.button-small a,
+.button-box.button-small button {
   font-size: 15px;
   max-width: 260px;
   width: 100%;

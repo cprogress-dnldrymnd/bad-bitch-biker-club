@@ -75,7 +75,9 @@ a {
 }
 
 .button-box {
-  a {
+
+  a,
+  button {
     padding: 1.125rem 1.5rem;
     border-radius: 5px;
     display: inline-block;
@@ -87,7 +89,9 @@ a {
   }
 
   &.button-primary {
-    a {
+
+    a,
+    button {
       background-color: var(--black-color);
       color: var(--accent-color);
       border-color: var(--black-color);
@@ -100,7 +104,9 @@ a {
   }
 
   &.button-accent {
-    a {
+
+    a,
+    button {
       background-color: var(--accent-color);
       color: var(--black-color);
       border-color: var(--accent-color);
@@ -113,14 +119,18 @@ a {
   }
 
   &.button-large-width {
-    a {
+
+    a,
+    button {
       max-width: 360px;
       width: 100%;
     }
   }
 
   &.button-small {
-    a {
+
+    a,
+    button {
       font-size: 15px;
       max-width: 260px;
       width: 100%;
@@ -179,9 +189,11 @@ section {
     overflow: hidden;
     position: relative;
     background-color: var(--white-color);
+
     img {
       width: 100%;
     }
+
     &:before {
       content: 'GIVEAWAYS';
       color: var(--black-color);
