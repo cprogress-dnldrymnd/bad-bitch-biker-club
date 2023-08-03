@@ -110,12 +110,6 @@
 
 .container {
   &.large-container {
-     @media (min-width: 1200px){
-      max-width: 1140px;
-    }
-  }
-
-  &.small-container {
     @media (min-width: 1500px) {
       max-width: 1420px;
     }
@@ -130,6 +124,12 @@
 
     @media (min-width: 1800px) {
       max-width: 1720px;
+    }
+  }
+
+  &.small-container {
+    @media (min-width: 1200px) {
+      max-width: 1140px;
     }
   }
 }
