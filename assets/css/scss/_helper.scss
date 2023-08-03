@@ -24,6 +24,22 @@
   }
 }
 
+.lg-padding-bottom {
+  padding-bottom: 7.875rem;
+
+  @media(max-width: 991px) {
+    padding-bottom: 5rem;
+  }
+
+  @media(max-width: 767px) {
+    padding-bottom: 4rem;
+  }
+
+  @media(max-width: 575px) {
+    padding-bottom: 3rem;
+  }
+}
+
 .md-padding-top {
   padding-top: 5rem;
 
