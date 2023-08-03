@@ -8534,6 +8534,9 @@ section {
       text-align: center;
       z-index: 1; }
 
+form .required {
+  color: red; }
+
 .background-black {
   background-color: var(--black-color);
   color: var(--white-color); }
