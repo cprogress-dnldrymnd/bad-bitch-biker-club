@@ -8431,7 +8431,8 @@ a {
   text-decoration: none;
   line-height: 1.5;
   border: 3px solid;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  transition: 300ms; }
 .button-box.button-primary a,
 .button-box.button-primary button {
   background-color: var(--black-color);
